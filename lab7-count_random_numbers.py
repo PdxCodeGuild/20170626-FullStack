@@ -17,6 +17,6 @@ import random
 
 number_counts = [0]*10
 for i in range(1000): # loop 1000 times
-	v = random.randint(0, len(number_counts)-1) # generate a random value
-	number_counts[v] += 1 # increment the count at that index
+    v = random.randint(0, len(number_counts)-1) # generate a random value
+    number_counts[v] += 1 # increment the count at that index
 print(number_counts)

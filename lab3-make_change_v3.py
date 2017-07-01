@@ -14,12 +14,12 @@ nickel = {'name':'nickel', 'value':5, 'count':0}
 penny = {'name':'penny', 'value':1, 'count':0}
 coins = [half_dollar, quarter, dime, nickel, penny]
 
-for i,coin in enumerate(coins):	#loop over both indices and elements
-	if value >= coin['value']:
-		coin['count'] = value // coin['value']
-		value -= coin['count']*coin['value']
-	message = coin['name'] + ' - ' + str(coin['count'])
-	print(message)
+for i,coin in enumerate(coins):    #loop over both indices and elements
+    if value >= coin['value']:
+        coin['count'] = value // coin['value']
+        value -= coin['count']*coin['value']
+    message = coin['name'] + ' - ' + str(coin['count'])
+    print(message)
 
 
 

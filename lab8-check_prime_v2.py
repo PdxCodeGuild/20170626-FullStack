@@ -24,33 +24,33 @@ def is_prime(v):
 # multiples of 4 are 4,8,12,16,20,24,..
 # multiples of 10 are 10,20,30,40,...
 def least_common_multiple(a, b):
-	lb = max(a, b) #lower-bound, possibly a common divisor
-	ub = a*b #upper-bound, guaranteed to be a common divisor
-	for i in range(lb, ub):
-		if is_divisible(i, a) and is_divisible(i, b):
-			return i
-	return ub
+    lb = max(a, b) #lower-bound, possibly a common divisor
+    ub = a*b #upper-bound, guaranteed to be a common divisor
+    for i in range(lb, ub):
+        if is_divisible(i, a) and is_divisible(i, b):
+            return i
+    return ub
 
 
 # the greatest common divisor (GCD) of two integers
 # is the largest positive integer that divides each of the integers
 # For example, the gcd of 8 and 12 is 4
 def greatest_common_divisor(a, b):
-	lb = 1 #lower-bound, the lowest possible GCD
-	ub = min(a, b) #upper-bound, the lower of the two arguments
-	for i in range(ub, lb, -1): #loop backwards, because we're trying to find the highest
-		if is_divisible(a, i) and is_divisible(b, i):
-			return i
-	return 1
+    lb = 1 #lower-bound, the lowest possible GCD
+    ub = min(a, b) #upper-bound, the lower of the two arguments
+    for i in range(ub, lb, -1): #loop backwards, because we're trying to find the highest
+        if is_divisible(a, i) and is_divisible(b, i):
+            return i
+    return 1
 
 
 
 # a little helper function to check values for us
 def check_values(a, b):
-	lcm = least_common_multiple(a, b)
-	gcd = greatest_common_divisor(a, b)
-	print('lcm('+str(a)+','+str(b)+')='+str(lcm))
-	print('gcd('+str(a)+','+str(b)+')='+str(gcd))
+    lcm = least_common_multiple(a, b)
+    gcd = greatest_common_divisor(a, b)
+    print('lcm('+str(a)+','+str(b)+')='+str(lcm))
+    print('gcd('+str(a)+','+str(b)+')='+str(gcd))
 
 
 check_values(3,4)

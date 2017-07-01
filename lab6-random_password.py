@@ -12,7 +12,7 @@ char_set = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789' # th
 password_length = int(input('how long will the password be? ')) # get the user input
 password = '' # start with an empty string
 for i in range(password_length):
-	random_char = random.choice(char_set) # get a random character from char_set
-	password += random_char # add it to our password
+    random_char = random.choice(char_set) # get a random character from char_set
+    password += random_char # add it to our password
 print(password)
 

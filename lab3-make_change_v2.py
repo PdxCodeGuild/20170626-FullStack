@@ -13,12 +13,12 @@ coin_counts = [0]*len(coin_values) # the counts of each type of coin, initialize
 coin_values.sort() # sort the coin values in ascending order
 coin_values.reverse() # reverse the list to put it in descending order
 
-for i,coin_value in enumerate(coin_values):	#loop over both indices and elements
-	if value >= coin_value:
-		coin_counts[i] = value // coin_value
-		value -= coin_counts[i]*coin_value
-	
-	message = str(coin_value) + '¢ - ' + str(coin_counts[i])
-	print(message)
+for i,coin_value in enumerate(coin_values):    #loop over both indices and elements
+    if value >= coin_value:
+        coin_counts[i] = value // coin_value
+        value -= coin_counts[i]*coin_value
+    
+    message = str(coin_value) + '¢ - ' + str(coin_counts[i])
+    print(message)
 
 

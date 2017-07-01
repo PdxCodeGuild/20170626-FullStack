@@ -8,36 +8,36 @@
 import random
 
 def abs_distance(a, b):
-	return abs(a-b)
+    return abs(a-b)
 
 target = random.randint(1, 10) #pick a random number: 1,2,3...10
 last_guess = -1
 while True:
-	guess = int(input('guess a number: '))
-	if guess == target:
-		print('correct!')
-		break
-	#else:
-	#	print('incorrect!')
-	
-	#v2
-	#if target > guess:
-	#	print('higher!')
-	#else:
-	#	print('lower!')
-	
-	#v3
-	if last_guess != -1:
-		d_last_guess = abs_distance(last_guess, target)
-		d_guess = abs_distance(guess, target)
-		if d_guess < d_last_guess:
-			print('closer!')
-		elif d_guess > d_last_guess:
-			print('further!')
-		else:
-			print('you\'re the same distance away')
-	
-	last_guess = guess #set the value up for the next iteration
-	
+    guess = int(input('guess a number: '))
+    if guess == target:
+        print('correct!')
+        break
+    #else:
+    #    print('incorrect!')
+    
+    #v2
+    #if target > guess:
+    #    print('higher!')
+    #else:
+    #    print('lower!')
+    
+    #v3
+    if last_guess != -1:
+        d_last_guess = abs_distance(last_guess, target)
+        d_guess = abs_distance(guess, target)
+        if d_guess < d_last_guess:
+            print('closer!')
+        elif d_guess > d_last_guess:
+            print('further!')
+        else:
+            print('you\'re the same distance away')
+    
+    last_guess = guess #set the value up for the next iteration
+    
 
 
