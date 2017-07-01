@@ -1,7 +1,7 @@
 
 # lab 8: check if a number is prime
 # a number is prime if it can only be divided by 1 and itself
-
+# v1: just check if a number is prime
 
 # returns true if 'a' is divisiable by 'b'
 # the modulus a%b returns the remainder of a/b
@@ -12,7 +12,7 @@ def is_divisible(a, b):
 
 def is_prime(v):
 	for i in range(2,v): # check all numbers from 2 to v-1
-		if is_divisable(v,i): # if v is divisible by i, v is not prime, return false
+		if is_divisible(v,i): # if v is divisible by i, v is not prime, return false
 			return False
 	return True
 

@@ -22,5 +22,3 @@ random_answer = phrases[random_index]
 print(random_answer)
 
 
-
-

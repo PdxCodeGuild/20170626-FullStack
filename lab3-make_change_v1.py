@@ -4,7 +4,6 @@
 # then we begin breaking that amount down, starting with the highest value coin
 # and ending with pennies
 
-
 user_input = input("Enter the total value: $") # we're expecting a value like 1.00
 value = int(float(user_input)*100) #convert $ amount to total number of cents
 
