@@ -1,7 +1,6 @@
 
 # lab 5: the computer randomly picks a value, the user has to guess
 
-
 import random
 
 random_number = random.randint(0, 10)
